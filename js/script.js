@@ -3,7 +3,7 @@ const weatherBlok = document.querySelector('#weather');
 async function loadWeather (e){
     weatherBlok.innerHTML =`
     <div class="weather__loading">
-    <img src="img/ZWdx.gif" width="150px" height="100px" alt="Завантаження..">
+    <img src="img/ZWdx.gif" width="250px" height="150px" alt="Завантаження..">
     </div>`;
 
 const server = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=Kyiv&appid=e5e67bd5c36ddb64a388f957cf7d7af6'
