@@ -20,12 +20,24 @@ if (response.ok) {
 }
 
 function getWeather(data){
-    console.log(data)
+    
     const location = data.name;
     const temp = Math.round(data.main.temp);
     const feelslike = Math.round(data.main.feels_like);
     const weatherStatus = data.weather[0].main;
     const weatherIcon = data.weather[0].icon;
+
+    const template = `
+    <div class="weather__mein">
+     <div class="weather__city">Kyiv</div>
+     <div class="weather__status">Clouds</div>
+    </div>
+        <div class="weather__icon">
+            <img src="https://openweathermap.org/img/w/04d.png"  alt="clouds">
+        </div>
+        </div>
+        <div class="weather__temp">14</div>
+        <div class="weather__feels-like">Feels like: 13</div>`;
 }
 
 
