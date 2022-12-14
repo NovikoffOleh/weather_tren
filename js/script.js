@@ -29,15 +29,17 @@ function getWeather(data){
 
     const template = `
     <div class="weather__mein">
-     <div class="weather__city">Kyiv</div>
-     <div class="weather__status">Clouds</div>
+     <div class="weather__city">${location}</div>
+     <div class="weather__status">${weatherStatus}</div>
     </div>
         <div class="weather__icon">
-            <img src="https://openweathermap.org/img/w/04d.png"  alt="clouds">
+            <img src="https://openweathermap.org/img/w/${weatherIcon}"  alt="${weatherStatus}">
         </div>
         </div>
-        <div class="weather__temp">14</div>
-        <div class="weather__feels-like">Feels like: 13</div>`;
+        <div class="weather__temp">${temp}</div>
+        <div class="weather__feels-like"> Feels like: ${feelslike}</div>`;
+
+        weatherBlok.innerHTML = template;
 }
 
 
