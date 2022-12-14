@@ -33,7 +33,7 @@ function getWeather(data){
      <div class="weather__status">${weatherStatus}</div>
     </div>
         <div class="weather__icon">
-            <img src="https://openweathermap.org/img/w/${weatherIcon}"  alt="${weatherStatus}">
+            <img src="https://openweathermap.org/img/w/${weatherIcon}.png"  alt="${weatherStatus}">
         </div>
         </div>
         <div class="weather__temp">${temp}</div>
